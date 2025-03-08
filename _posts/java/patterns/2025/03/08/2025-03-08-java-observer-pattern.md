@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-02-06
+date: 2025-03-08
 categories: [Java, Design Patterns]
 tags: [Java Design Patterns]
 title: Observer Design Pattern
