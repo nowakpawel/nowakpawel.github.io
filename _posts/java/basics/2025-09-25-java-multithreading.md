@@ -20,7 +20,7 @@ Wielowątkowość możemy podzielić na dwie kategorie:
 # Dlaczego warto używać wielowątkowości?
 - W środowisku składającym się tylko z jednego wątku, tylko jedno zadanie w tym ssanym czasie może być wykonywane.
 - Cykle pracy procesora są marnowane, w momencie, kiedy na przykład czekamy na wprowadzenie danych.
-- Wielozadaniowość pozwala na efektywne wykorzystanie bezczynnego czasu procesora.
+- Wielowątkowość pozwala na efektywne wykorzystanie bezczynnego czasu procesora.
 
 # Wątek
 Zatem czym jest wątek? 
