@@ -39,7 +39,7 @@ Daemon jest zależny od głównego wątku. Oznacza to, że jego działanie zosta
 Dużo już powiedziałem o wątkach. Przejdźmy zatem do konkretnego przykładu.
 Po pierwsze jak stworzyć nowy wątek w Javie?
 
-## Tworzenie nowego watku
+## Tworzenie nowego wątku
 ### Rozszerzamy klasę `Thread`
 
 ```java
