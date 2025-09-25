@@ -71,7 +71,7 @@ Innym sposobem na stworzenie nowego wątku jest zaimplementowanie metody `run()`
 ```java
 Runnable lambdaThread = () -> {
             for (int i = 1; i <= 10; i++) {
-                System.out.printf("runnableThread: %d\n", i);
+                System.out.printf("lambdaThread: %d\n", i);
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -80,7 +80,7 @@ Runnable lambdaThread = () -> {
             }
         };
 ```
-Tworzymy nowy obiekt o typie `Runnable`. Teraz by rozpocząć pracę takiego wątku, musimy stworzyć nowy wątek, a w konstruktorze przekazać przed chwilą stworzony obiekt. Nasza metoda `main`(), wraz z poprzednim przykładem może zatem wyglądać tak:
+Tworzymy nowy obiekt o typie `Runnable`. Teraz by rozpocząć pracę takiego wątku, musimy go stworzyć, a w konstruktorze przekazać przed chwilą obiekt `Runnable`. Nasza metoda `main`(), wraz z poprzednim przykładem może zatem wyglądać tak:
 ```java
     public static void main(String[] args) {
     MyThread thread = new MyThread();
