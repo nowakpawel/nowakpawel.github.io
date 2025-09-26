@@ -18,7 +18,7 @@ Wielowątkowość możemy podzielić na dwie kategorie:
 
 
 # Dlaczego warto używać wielowątkowości?
-- W środowisku składającym się tylko z jednego wątku, tylko jedno zadanie w tym ssanym czasie może być wykonywane.
+- W środowisku składającym się tylko z jednego wątku, tylko jedno zadanie w tym samym czasie może być wykonywane.
 - Cykle pracy procesora są marnowane, w momencie, kiedy na przykład czekamy na wprowadzenie danych.
 - Wielowątkowość pozwala na efektywne wykorzystanie bezczynnego czasu procesora.
 
@@ -32,7 +32,7 @@ Zatem czym jest wątek?
 
 # Główny wątek programu
 Kiedy aplikacja jest uruchomiona z metody `main()`, uruchamia się główny wątek programu. Jeśli w czasie wykonywania, żaden inny wątek nie zostanie stworzony, po zakończeniu wykomywania instrukcji, metoda `main()` zakończy swoje działanie. Tym samym główny wątek programu zostanie zakończony.
-Wszystkie stworzone w czasie wykonywania programu wątki zostają uruchomione z `main()` pośrednio lub bezpośrednio. To oznacza, że metoda `main()` może zakończyć swoje działanie, ale aplikacja (program) będzie działać dalej do momentu, aż wszystkie wątki nie zakończą swojego działania.Dodatkowo środowisko uruchomieniowe Javy rozróżnia pomiędzy wątki jako dzieci, oraz Daemony (utworzone poprzez `setDaemon(boolean)` przed wystartowaniem wątku).
+Wszystkie stworzone w czasie wykonywania programu wątki zostają uruchomione z `main()`, pośrednio lub bezpośrednio. To oznacza, że metoda `main()` może zakończyć swoje działanie, ale aplikacja (program) będzie działać dalej do momentu, aż wszystkie wątki nie zakończą swojego działania. Dodatkowo środowisko uruchomieniowe Javy rozróżnia pomiędzy wątki - dzieci, oraz Daemony (utworzone poprzez `setDaemon(boolean)` przed wystartowaniem wątku).
 Daemon jest zależny od głównego wątku. Oznacza to, że jego działanie zostanie przerwane w momencie kiedy wszystkie wątki potomne się zakończą.
 
 # Przykład 
@@ -80,7 +80,7 @@ Runnable lambdaThread = () -> {
             }
         };
 ```
-Tworzymy nowy obiekt o typie `Runnable`. Teraz by rozpocząć pracę takiego wątku, musimy go stworzyć, a w konstruktorze przekazać przed chwilą obiekt `Runnable`. Nasza metoda `main`(), wraz z poprzednim przykładem może zatem wyglądać tak:
+Tworzymy nowy obiekt o typie `Runnable`. Teraz by rozpocząć pracę takiego wątku, musimy go stworzyć, a w konstruktorze przekazać obiekt `Runnable`. Nasza metoda `main()`, wraz z poprzednim przykładem może zatem wyglądać tak:
 ```java
     public static void main(String[] args) {
     MyThread thread = new MyThread();
