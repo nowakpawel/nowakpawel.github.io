@@ -1,0 +1,101 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>nowakpawel</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2025-09-25T23:19:56+02:00</updated>
+  <author>
+    <name>Pawel</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Pawel </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Wielowątkowość</title>
+    <link href="http://localhost:4000/posts/java-multithreading/" rel="alternate" type="text/html" title="Wielowątkowość" />
+    <published>2025-09-25T00:00:00+02:00</published>
+  
+    <updated>2025-09-25T22:28:39+02:00</updated>
+  
+    <id>http://localhost:4000/posts/java-multithreading/</id>
+    <content type="text/html" src="http://localhost:4000/posts/java-multithreading/" />
+    <author>
+      <name>Pawel</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Basics" />
+    
+  
+
+  <summary>Wielowątkowość pozwala wielu aktywnościom na równoległe wykonywanie swoich zadań.  Wielowątkowość możemy podzielić na dwie kategorie:    Process-based multitasking - Pozwala na równoległe włączanie różnych procesów (odtwarzanie muzyki z Winampa, w czasie, gdy edytujemy tekst w MS Word).   Thread-based multitasking -  Pozwala komponentom tego samego programu na równoległe wykonywanie różnych czy...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Observer Design Pattern</title>
+    <link href="http://localhost:4000/posts/java-observer-pattern/" rel="alternate" type="text/html" title="Observer Design Pattern" />
+    <published>2025-03-08T00:00:00+01:00</published>
+  
+    <updated>2025-03-08T21:41:59+01:00</updated>
+  
+    <id>http://localhost:4000/posts/java-observer-pattern/</id>
+    <content type="text/html" src="http://localhost:4000/posts/java-observer-pattern/" />
+    <author>
+      <name>Pawel</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Design Patterns" />
+    
+  
+
+  <summary>Introduction The Observer design pattern is a behavioral software design pattern that defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. This pattern is particularly useful in scenarios where a clear separation of concerns and loose coupling between objects are desired.  Understanding the Observer Pa...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Binary Search</title>
+    <link href="http://localhost:4000/posts/java-binary-search/" rel="alternate" type="text/html" title="Binary Search" />
+    <published>2025-02-06T00:00:00+01:00</published>
+  
+    <updated>2025-02-06T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/java-binary-search/</id>
+    <content type="text/html" src="http://localhost:4000/posts/java-binary-search/" />
+    <author>
+      <name>Pawel</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Algorithms" />
+    
+  
+
+  <summary>Binary Search is one of the most fundamental and efficient searching algorithms, often covered in introductory computer science courses. It is used to find an element in a sorted array or list in logarithmic time. This makes Binary Search highly efficient compared to linear search algorithms, especially when dealing with large datasets. In this blog post, we’ll explore how Binary Search works a...</summary>
+
+  </entry>
+
+</feed>
+
+
